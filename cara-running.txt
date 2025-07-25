@@ -1,0 +1,9 @@
+Keterangan:
+Website rental mobil ini memiliki 5 Halaman. Home, Faq, Daftar Paket, Transaksi, Wisata.
+Setiap halaman memiliki tujuannya masing - masing. Halaman tersebut sesuai dengan nama file HTML.
+
+Website rental mobil tersebut menggunakan TailwindCSS untuk Framewrok CSS nya.
+Website rental mobil tersebut menggunakan jQuery untuk Javascript Library nya.
+
+Untuk menggunakan TailwindCSS bisa menggunakan CDN atua CLI. Tapi untuk CLI harus menggunakan menginstall NodeJS terlebih dahulu.
+Kemudian untuk running: npx tailwindcss -i .\assets\css\input.css -o .\assets\css\tailwind.css --watch

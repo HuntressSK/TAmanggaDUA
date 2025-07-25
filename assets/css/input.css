@@ -1,0 +1,96 @@
+/* KONFIGURASI DARI TAILWIND */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TAMBAHAN ULTILITES UNTUK CSS SETUP */
+@layer utilities {
+  /* AGAR SCROLLING SMOOTH */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* MEMBUAT STYLEING PADA TAG BODY */
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: #f9fbfc;
+    overflow-x: hidden;
+  }
+
+  /* UBAH AGAR INPUT BUTTON TIDAK ADA OUTLINE */
+  input:focus {
+    outline: none;
+  }
+
+  /* UBAH AGAR INPUT BUTTON TIDAK ADA AUTOFILL */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #f1f5f9 inset !important;
+  }
+
+  /* SETIAP TAG BUTTON, DAN A MEMILIKI TRANSITION */
+  a,
+  button {
+    transition: 0.1s ease-in;
+  }
+
+  /* MEMBUAT FIX WIDTH PADA CLASS CONTAINER */
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    max-width: 1300px;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .group:hover .group-hover\:opacity-100 {
+    opacity: 1;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #000;
+  }
+
+  .thumbnail-container {
+    flex: 0 0 auto; /* Biarkan ukuran thumbnail menyesuaikan */
+    width: 200px; /* Lebar setiap thumbnail */
+  }
+
+  #gallery-thumbnails-container {
+    overflow-x: auto; /* Aktifkan scroll horizontal */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .datepicker-picker {
+    background-color: #f1f5f9;
+  }
+
+
+
+  /* MEMBUAT CONTAINER MENJADI RESPONSIVE */
+  @media (max-width: 1040px) {
+    .container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
